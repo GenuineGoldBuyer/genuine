@@ -59,7 +59,6 @@ export default function Navbar() {
             </li>
           </ul>
         </div>
-
         <div className="w-full flex justify-center ">
           <ul className="flex flex-row xl:hidden lg:hidden md:hidden list-none ">
             <li className="nav-item text-center">
@@ -104,7 +103,7 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item text-center">
-              <Link href="/contact">
+              <Link href="/jewellery">
                 <a className="px-3 py-2 flex items-center text-xl leading-snug text-white hover:opacity-75">
                   <span
                     className="ml-1  text-white"
@@ -112,7 +111,7 @@ export default function Navbar() {
                   >
                     <i className="fa-solid fa-indian-rupee-sign"></i>
                     <br />
-                    Services
+                    Jewellery Designs
                   </span>
                 </a>
               </Link>
@@ -168,10 +167,10 @@ export default function Navbar() {
               </Link>
             </li>
             <li className="nav-item xs:mx-auto 2xs:mx-auto s:mx-auto xl:border-0 2xl:border-0 lg: md:border-0 sm:border-0 xs:border-b-2 2xs:border-b-2 s:border-b-2">
-              <Link href="/contact">
+              <Link href="/jewellery">
                 <a className="px-3 py-2 flex items-center text-xl leading-snug text-white hover:opacity-75">
                   <span className="ml-2 text-base leading-xl text-white opacity-75">
-                    Services
+                  Jewellery Designs
                   </span>
                 </a>
               </Link>

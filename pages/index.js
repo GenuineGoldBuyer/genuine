@@ -6,10 +6,14 @@ import Details from './what-we-do';
 import Benefit from './benefits';
 import Footer from './footer';
 import Testimonial from './testimonial';
+import Link from 'next/link';
+import Chennai from '../public/img/chennai.png';
+import Image from 'next/image';
+import Countup from './Countup';
 
-export default function Home() {
+export default function Home({ cities }) {
   return (
-    <div>
+    <div className="bg-gray-900">
       <Head>
         <title>Buy and Sell Gold at Best Market Price in Chennai</title>
         <meta
@@ -47,10 +51,51 @@ export default function Home() {
       </Head>
       <Nav />
       <Intro />
+      <h1 className="text-3xl text-center lg:text-3xl xs:text-xl 2xs:text-xl s:text-xl sm:text-lg text-yellow-500 mx-auto font-extrabold font-sans py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
+        <Image src={Chennai} height={70} width={70} />
+        Sell your Gold at best Market rate in Chennai
+      </h1>
+      <Countup/>
+
+      <h1 className="text-3xl text-center lg:text-3xl xs:text-xl 2xs:text-xl s:text-xl sm:text-lg text-yellow-500 mx-auto font-extrabold font-sans py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
+        <Image src={Chennai} height={70} width={70} />
+        Sell your Gold at your Location in Chennai
+      </h1>
+
+      <div className=" grid grid-cols-7 md:grid-cols-5 lg:grid-cols-7  xs:grid xs:grid-cols-2 sm:grid sm:grid-cols-6 2xs:grid 2xs:grid-cols-5 s:grid s:grid-cols-3 gap-1 py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7 mx-auto">
+        {cities.map(post => (
+          <div key={post.id}>
+            <Link
+              href="/search-by-cities-in-uae/[city]"
+              as={'/search-by-cities-in-uae/' + post.city}
+            >
+              <a>
+                <main className="border h-full  hover:border-amber-600 py-3 bg-yellow-100">
+                  <p className="text-center text-amber-500 hover:text-amber-300 hover:underline text-lg lg:text-lg xs:text-xs 2xs:text-xs s:text-xs sm:text-base font-heading font-mono font-medium   ">
+                    <Image src={Chennai} height={30} width={30} />{' '}
+                    {post.city.toUpperCase()}{' '}
+                  </p>
+                </main>
+              </a>
+            </Link>
+          </div>
+        ))}{' '}
+      </div>
       <Details />
-      <Benefit/>
-      <Testimonial/>
-      <Footer/>
+      <Benefit />
+      <Testimonial />
+      <Footer />
     </div>
   );
+}
+export async function getStaticProps() {
+  // forms
+  const cityresponse = await fetch(`https://genuineapi.vercel.app/api/cities`);
+  const cities = await cityresponse.json();
+
+  return {
+    props: {
+      cities
+    }
+  };
 }

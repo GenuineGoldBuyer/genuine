@@ -1,87 +1,124 @@
 import React from 'react';
 import Image from 'next/image';
-import Necklace from '../public/img/Necklace.png';
+import Products from './Products';
 
 export default function Intro() {
   return (
     <div>
-      <div className="bg-gray-900 h-96 text-white grid grid-cols-1 place-items-center content-center">
+      <div className="bg-gray-900 h-96 text-white grid grid-cols-1 place-items-center content-center py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
         <h1 className="text-3xl text-center lg:text-3xl xs:text-xl 2xs:text-xl s:text-xl sm:text-lg  text-yellow-500 mx-auto font-extrabold font-sans">
           Buy and Sell Gold at best Market Price
         </h1>
         <p className="flex justify-center w-2/3 xs:mx-3 2xs:mx-3 sm:mx-5 s:mx-2 text-center text-xl xs:text-xs 2xs:text-xs s:text-xs sm:text-base font-heading font-mono font-medium py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s.Lorem Ipsum has been the industry's standard dummy
-          text ever since the 1500s.
+          We buy used Gold, scrap gold, second hand gold at best price Online.
+          Our well experienced expert will weigh your gold, remove the stone and
+          its impurities and quote the today's rate for the given commodities
+          and then the instant cash is given in return.
         </p>
-        <button class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded ">
+        <button className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded ">
           Free Consultation
         </button>
       </div>
-      <div className=" bg-gray-900">
-        <div className="grid grid-cols-2 place-items-center align-middle">
-          <div className="w-2/3 text-center text-white items-center text-xl xs:text-xs 2xs:text-xs s:text-xs sm:text-base font-heading font-mono font-medium ml-auto">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s.
-          </div>
-          <div className="mr-auto">
-            <Image src={Necklace} width={500} height={500} />
-          </div>
-        </div>
-      </div>
-      <div className="bg-gray-900 h-96">
-        <div className="flex justify-center  py-7 md:py-5 sm:py-7 xs:py-5 2xs:py-5 s:py-5">
+      <div className="bg-gray-900 h-100 text-white grid grid-cols-1 place-items-center content-center py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
+        <h1 className="text-3xl text-center lg:text-3xl xs:text-xl 2xs:text-xl s:text-xl sm:text-lg  text-yellow-500 mx-auto font-extrabold font-sans">
+          Buy Personalized Jewellery handcrafted by Our well-skilled Goldsmith
+        </h1>
+        <p className="flex justify-center w-2/3 xs:mx-3 2xs:mx-3 sm:mx-5 s:mx-2 text-center text-xl xs:text-xs 2xs:text-xs s:text-xs sm:text-base font-heading font-mono font-medium py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
           <div>
-            <h2 className="text-3xl text-center lg:text-3xl xs:text-xl 2xs:text-xl s:text-xl sm:text-lg text-yellow-500 mx-auto font-extrabold font-sans">
-              Lorem Ipsum
-            </h2>
-            <p className="flex justify-center xs:mx-3 2xs:mx-3 sm:mx-5 s:mx-2 text-center text-xl lg:text-xl xs:text-xs 2xs:text-xs s:text-xs sm:text-base font-heading font-mono font-medium text-white py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
+            Get trending{' '}
+            <a
+              href="/jewellery"
+              className="text-amber-500 hover:text-amber-300 hover:underline"
+            >
+              Jewel
+            </a>{' '}
+            design ideas from our website, Design your Customized jewellery and
+            Submit your inquiry at the following form. Our expert will get back
+            to you through whatsapp.
           </div>
-        </div>
-        <div className=" grid grid-cols-4 xs:grid-cols-2 2xs:grid-cols-2 s:grid-cols-2 sm:grid-cols-2 gap-4 place-content-center content-center mx-auto xs:mx-3 2xs:mx-3 sm:mx-5 s:mx-2 text-center py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
-          <div>
-            <h2 className="w-2/3 text-xl lg:text-xl xs:text-sm 2xs:text-sm s:text-sm text-yellow-500 mx-auto font-extrabold font-sans">
-              Heading
-            </h2>
-            <p className="text-base xs:text-xs 2xs:text-xs s:text-xs sm:text-base  text-gray-400">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
+        </p>
+        <Products/>
+        <div className="grid grid-cols-6 xs:grid-cols-1 2xs:grid-cols-1 s:grid-cols-1 lg:grid-cols-3 md:grid-cols-3 place-items-center mx-auto py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
+          <div className="text-center">
+            <a
+              href="/jewellery/Bangle"
+              className="text-center text-amber-500 hover:text-amber-300 hover:underline"
+            >
+              <Image src="/img/icons/Bangle.png" height="80" width="80" />
+              <p className="text-center text-amber-500 hover:text-amber-300 hover:underline">
+                BANGLES
+              </p>
+            </a>
+            <p className="text-white ">View Bangle designs {'>>'}</p>
           </div>
-          <div>
-            <h2 className="w-2/3 text-xl lg:text-xl xs:text-sm 2xs:text-sm s:text-sm text-yellow-500 mx-auto font-extrabold font-sans">
-              Heading
-            </h2>
-            <p className="text-base xs:text-xs 2xs:text-xs s:text-xs sm:text-base  text-gray-400">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
+          <div className="text-center">
+            {' '}
+            <a href="/jewellery/Bracelet">
+              <Image src="/img/icons/Bracelet.png" height="80" width="80" />
+              <p className="text-center text-amber-500 hover:text-amber-300 hover:underline">
+                BRACELET
+              </p>
+              <p className="text-white ">View Bracelet designs {'>>'}</p>
+            </a>
           </div>
-          <div>
-            <h2 className="w-2/3 text-xl lg:text-xl xs:text-sm 2xs:text-sm s:text-sm text-yellow-500 mx-auto font-extrabold font-sans">
-              Heading
-            </h2>
-            <p className="text-base xs:text-xs 2xs:text-xs s:text-xs sm:text-base  text-gray-400">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
+          <div className="text-center">
+            <a href="/jewellery/Chain">
+              <Image src="/img/icons/Chain.png" height="80" width="80" />
+              <p className="text-center text-amber-500 hover:text-amber-300 hover:underline">
+                CHAIN
+              </p>
+              <p className="text-white ">View Chain designs {'>>'}</p>
+            </a>
           </div>
-          <div>
-            <h2 className="w-2/3 text-xl lg:text-xl xs:text-sm 2xs:text-sm s:text-sm text-yellow-500 mx-auto font-extrabold font-sans">
-              Heading
-            </h2>
-            <p className="text-base xs:text-xs 2xs:text-xs s:text-xs sm:text-base  text-gray-400">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
+          <div className="text-center">
+            <a
+              href="/jewellery/Earring"
+              className="text-center text-amber-500 hover:text-amber-300 hover:underline"
+            >
+              <Image src="/img/icons/Earring.png" height="80" width="80" />
+              <p className="text-center text-amber-500 hover:text-amber-300 hover:underline">
+                EARRING
+              </p>
+              <p className="text-white ">View Earring designs {'>>'}</p>
+            </a>
+          </div>
+          <div className="text-center">
+            <a href="/jewellery/Necklace">
+              <Image src="/img/icons/Necklace.png" height="80" width="80" />
+              <p className="text-center text-amber-500 hover:text-amber-300 hover:underline">
+                NECKLACE
+              </p>
+            </a>
+            <p className="text-white ">View Necklace designs {'>>'}</p>
+          </div>
+          <div className="text-center">
+            <a href="/jewellery/Ring">
+              <Image
+                src="/img/icons/Ring.png"
+                className="shadow-lg"
+                height="80"
+                width="80"
+              />
+              <p className="text-center text-amber-500 hover:text-amber-300 hover:underline">
+                RING
+              </p>
+              <p className="text-white ">View Ring designs {'>>'}</p>
+            </a>
           </div>
         </div>
       </div>
     </div>
   );
+}
+export async function getStaticProps() {
+  // forms
+
+  const cityresponse = await fetch(`https://genuineapi.vercel.app/api/cities`);
+  const cities = await cityresponse.json();
+
+  return {
+    props: {
+      cities
+    }
+  };
 }
