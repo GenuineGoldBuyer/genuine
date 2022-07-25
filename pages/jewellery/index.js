@@ -3,10 +3,11 @@ import Footer from '../footer';
 import Link from "next/link";
 import React from 'react';
 import Head from 'next/head';
+import Image from "next/image";
 
 export default function category({ products }) {
   return (
-    <div className="bg-gray-800">
+    <div className="bg-gray-900">
       <Head>
         <title>Gold</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -50,14 +51,15 @@ export default function category({ products }) {
         />
       </Head>
       <Nav />
-      <div className="grid grid-cols-4 xs:ml-4 md:mx-4 sm:ml-0 xs:grid xs:grid-cols-2 sm:grid sm:grid-cols-3 md:grid md:grid-cols-3 2xs:grid 2xs:grid-cols-3 gap-1 2xs:mx-4 md:ml-11 mr-3 my-10 ">
+      <div className="grid grid-cols-3 xs:grid-cols-1 2xs:grid-cols-1 s:grid-cols-1 lg:grid-cols-3 md:grid-cols-3 place-items-center mx-auto py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
         {products.map(post => (
-          <div key={post.id}>
+          <div key={post.id} className="text-center m-5">
+            <Image src={"/img/icons/"+ post.im} height="80" width="80"/>
             <Link
               href="/jewellery/[category]"
               as={'/jewellery/' + post.category}
             >
-              <a title={'car spare parts in ' + post.category}>
+              <a title={ post.category}>
                 <main className="text-center text-xl xs:text-xs 2xs:text-xs s:text-xs sm:text-base font-heading font-mono font-medium xs:text-center text-yellow-500 underline hover:text-yellow-700 focus:text-yellow-700">
                   {post.category}
                 </main>

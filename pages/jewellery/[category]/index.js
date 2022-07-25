@@ -80,11 +80,11 @@ export default function Car({ car, category }) {
       </Head>
       <div className="flex xs:grid xs:grid-cols-1 sm:grid sm:grid-cols-1 2xs:grid 2xs:grid-cols-1  xs:mx-auto bg-gray-900">
         <div className="w-3/4 2xs:w-full xs:w-full sm:w-full">
-          <main className="mx-10 xs:mx-4 2xs:mx-4 sm:mx-4 md:mx-5 mt-10 border border-gray-100 shadow-sm">
+          <main className="mx-10 xs:mx-4 2xs:mx-4 sm:mx-4 md:mx-5 mt-10 shadow-sm">
             <article>
               Get Ideas from Gallery {'>>'} Personalize your own {category}{' '}
               {'>>'} Talk to our expert
-              <div className="grid grid-cols-4 xs:ml-4 md:mx-4 sm:ml-0 xs:grid xs:grid-cols-2 xs:text-base sm:grid sm:grid-cols-4 md:grid md:grid-cols-3 2xs:grid 2xs:grid-cols-3 gap-1 2xs:mx-4 md:ml-11 mr-3 my-10 ">
+              <div className="grid grid-cols-4 xs:ml-4 md:mx-4 sm:ml-0 xs:grid xs:grid-cols-2 sm:grid sm:grid-cols-4 md:grid md:grid-cols-3 2xs:grid 2xs:grid-cols-3 gap-1 2xs:mx-4 md:ml-11 mr-3 my-10 ">
                 {car.map(post => (
                   <div key={post.id}>
                     <Link
@@ -96,7 +96,7 @@ export default function Car({ car, category }) {
                           post.category + ' - ' + post.items + ' spare parts'
                         }
                       >
-                        <main className="text-center text-base xs:text-xs xs:text-center font-mono text-yellow-500 underline hover:text-yellow-700 focus:text-yellow-700 border border-gray-100 h-100">
+                        <main className="text-center xs:text-center font-mono text-yellow-500 underline hover:text-yellow-700 focus:text-yellow-700 h-100">
                           {post.items.replace('%2F', '/')}{' '}
 
                         </main>
@@ -107,7 +107,7 @@ export default function Car({ car, category }) {
               </div>
             </article>
             <div className="text-center mt-2 text-red-400 text-sm xs:text-xs">
-              **Model not found above?
+              **Your desired design not found?
               <Link href="/get-in-touch">
                 <a>
                   <nobr className="text-yellow-500 text-sm underline">

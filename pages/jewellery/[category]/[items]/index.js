@@ -1,18 +1,18 @@
 import Nav from '../../../nav';
 import Footer from '../../../footer';
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
+import React from 'react';
 import Head from 'next/head';
-import img from "../../../../public/img/GoldCubanLink/gold_cuban_link_1.png";
+import Image from 'next/image';
+import PhotoAlbum from 'react-photo-album';
 
-export default function Car({ category, items }) {
+export default function Car({ category, items, imgdata, images,img1 }) {
   return (
     <div className="bg-gray-900">
       <Nav />
       <Head>
         <title>
-          {category} - {items}&nbsp; Car Auto Spare Parts Order Online in UAE -
-          Best Prices
+          {`${category} - ${items} in Chennai, Tamil Nadu -
+          Best Prices`}
         </title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
@@ -109,7 +109,6 @@ export default function Car({ category, items }) {
       </Head>
       <div className="flex xs:grid xs:grid-cols-1 sm:grid sm:grid-cols-1 2xs:grid 2xs:grid-cols-1">
         <div className="w-3/4 2xs:w-full xs:w-full s:w-full sm:w-full xs:grid xs:grid-cols-1">
-
           <main className="xs:mx-auto 2xs:mx-4 sm:mx-4 md:mx-5 mt-10 shadow-sm">
             <div>
               <div className="text-5xl lg:text-4xl md:text-3xl sm:text-2xl text-yellow-400 font-bold py-4 sm:mt-5 md:mt-5 lg:mx-0 xs:text-xs xl:text-lg 2xs:text-xs px-5">
@@ -131,6 +130,24 @@ export default function Car({ category, items }) {
               </p>
             </div>
           </main>
+          <p className="text-yellow-400">{imgdata.items}</p>
+          {imgdata.map((i) =>{
+            <ul key={i.items}><li><Image src={i.img[0].src} width={40} height={40}/></li></ul>
+          })}
+
+          {img1.map(i => {
+            <ul key={i}>
+              <li>
+                <Image src={i} width={50} height={50} />
+              </li>
+            </ul>;
+          })}
+
+          <Image
+            src={'/img/GoldCubanLink/gold_cuban_link_1.png'}
+            height="80"
+            width="80"
+          />
         </div>
       </div>
       <Footer />
@@ -157,9 +174,11 @@ export async function getStaticProps({ params }) {
     `https://genuineapi.vercel.app/api/Products/${category}/${items}`
   );
   const imgdata = await resp.json();
-  const images = imgdata.map(i => i.map);
+  console.log(imgdata.map((i) => i.img[0].src))
+  const img1 = imgdata.map((i) => i.img[0].src)
+  const images = imgdata.map(i => i.img.map(c => c.src));
   console.log(images);
   return {
-    props: { category, items }
+    props: { category, items, imgdata, images, img1 }
   };
 }

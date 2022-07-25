@@ -1,9 +1,8 @@
 import React from 'react';
 
-export default function Details(cities) {
+export default function Details() {
   return (
     <div className="bg-gray-900 ">
-
       <div className="grid grid-cols-2 container mx-auto xs:grid-cols-1 2xs:grid-cols-1 s:grid-cols-1 sm:grid-cols-2  text-start sm:text-start xs:text-center 2xs:text-center s:text-center gap-4 rounded-4xl py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
         <div className="h-32 w-full bg-yellow-500"></div>
         <div>
@@ -31,4 +30,3 @@ export default function Details(cities) {
     </div>
   );
 }
-
