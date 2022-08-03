@@ -1,5 +1,6 @@
 import React from 'react';
 import Products from './Products';
+import Link from "next/link";
 
 export default function Intro() {
   return (
@@ -11,7 +12,7 @@ export default function Intro() {
         <p className="flex justify-center w-2/3 xs:mx-3 2xs:mx-3 sm:mx-5 s:mx-2 text-center text-xl xs:text-xs 2xs:text-xs s:text-xs sm:text-base font-heading font-mono font-medium py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
           We buy used Gold, scrap gold, second hand gold at best price Online.
           Our well experienced expert will weigh your gold, remove the stone and
-          its impurities and quote the today's rate for the given commodities
+          its impurities and quote the today&apos;s rate for the given commodities
           and then the instant cash is given in return.
         </p>
         <button className="bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded ">
@@ -25,12 +26,12 @@ export default function Intro() {
         <div className="flex justify-center w-2/3 xs:mx-3 2xs:mx-3 sm:mx-5 s:mx-2 text-center text-xl xs:text-xs 2xs:text-xs s:text-xs sm:text-base font-heading font-mono font-medium py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
           <p>
             Get trending{' '}
-            <a
+            <Link
               href="/jewellery"
               className="text-amber-500 hover:text-amber-300 hover:underline"
             >
               Jewel
-            </a>{' '}
+            </Link>{' '}
             design ideas from our website, Design your Customized jewellery and
             Submit your inquiry at the following form. Our expert will get back
             to you through whatsapp.

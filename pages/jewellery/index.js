@@ -54,7 +54,7 @@ export default function category({ products }) {
       <div className="grid grid-cols-3 xs:grid-cols-1 2xs:grid-cols-1 s:grid-cols-1 lg:grid-cols-3 md:grid-cols-3 place-items-center mx-auto py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
         {products.map(post => (
           <div key={post.id} className="text-center m-5">
-            <Image src={"/img/icons/"+ post.im} height="80" width="80"/>
+            <Image src={"/img/icons/"+ post.category_im} alt="alt" height="80" width="80"/>
             <Link
               href="/jewellery/[category]"
               as={'/jewellery/' + post.category}

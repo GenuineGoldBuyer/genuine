@@ -61,7 +61,7 @@ export default function Countup() {
         </div>
         <div className="font-extrabold uppercase bg-gradient-to-r from-amber-500 via-amber-200 to-amber-500 rounded-xl lg:mx-6 py-2 shadow-2xl xs:shadow-none sm:shadow-none xs:text-xs text-center">
           <h1 className="text-2xl text-amber-800 lg:text-base font-semibold">
-            <i class="fas fa-3x fa-balance-scale"></i>
+            <i className="fas fa-3x fa-balance-scale"></i>
           </h1>
           <p className="text-xl lg:text-base sm:text-xs md:text-sm xs:text-xs s:text-xs font-semibold font-mono py-3">
             STEP-4

@@ -14,8 +14,8 @@ export default function Testimonial() {
           <i className="fas fa-3x fa-quote-left"></i>
             <p className="flex justify-center w-2/3 xs:mx-3 2xs:mx-3 sm:mx-5 s:mx-2 text-center text-xl xs:text-xs 2xs:text-xs s:text-xs sm:text-base font-heading font-mono font-medium py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.Lorem Ipsum has been the industry's standard
+              industry. Lorem Ipsum has been the  standard dummy text
+              ever since the 1500s.Lorem Ipsum has been the  standard
               dummy text ever since the 1500s.
             </p>
           </div>
@@ -25,8 +25,8 @@ export default function Testimonial() {
           <i className="fas fa-3x fa-quote-left"></i>
             <p className="flex justify-center w-2/3 xs:mx-3 2xs:mx-3 sm:mx-5 s:mx-2 text-center text-xl xs:text-xs 2xs:text-xs s:text-xs sm:text-base font-heading font-mono font-medium py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.Lorem Ipsum has been the industry's standard
+              industry. Lorem Ipsum has been the  standard dummy text
+              ever since the 1500s.Lorem Ipsum has been the  standard
               dummy text ever since the 1500s.
             </p>
           </div>
@@ -36,8 +36,8 @@ export default function Testimonial() {
           <i className="fas fa-3x fa-quote-left"></i>
             <p className="flex justify-center w-2/3 xs:mx-3 2xs:mx-3 sm:mx-5 s:mx-2 text-center text-xl xs:text-xs 2xs:text-xs s:text-xs sm:text-base font-heading font-mono font-medium py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s.Lorem Ipsum has been the industry's standard
+              industry. Lorem Ipsum has been the  standard dummy text
+              ever since the 1500s.Lorem Ipsum has been the  standard
               dummy text ever since the 1500s.
             </p>
           </div>

@@ -16,10 +16,14 @@
     "next": "^12.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-photo-album": "^1.16.0"
+    "react-medium-image-zoom": "^4.0.4",
+    "react-photo-album": "^1.16.0",
+    "vercel": "^27.3.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
+    "eslint": "^8.21.0",
+    "eslint-config-next": "12.2.3",
     "postcss": "^8.4.14",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^3.1.2"

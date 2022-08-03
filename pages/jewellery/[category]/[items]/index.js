@@ -132,19 +132,19 @@ export default function Car({ category, items, imgdata, images,img1 }) {
           </main>
           <p className="text-yellow-400">{imgdata.items}</p>
           {imgdata.map((i) =>{
-            <ul key={i.items}><li><Image src={i.img[0].src} width={40} height={40}/></li></ul>
+            <ul key={i.items}><li><Image src={i.img[0].src} alt="alt" width={40} height={40}/></li></ul>
           })}
 
           {img1.map(i => {
             <ul key={i}>
               <li>
-                <Image src={i} width={50} height={50} />
+                <Image src={i} alt="alt" width={50} height={50} />
               </li>
             </ul>;
           })}
 
           <Image
-            src={'/img/GoldCubanLink/gold_cuban_link_1.png'}
+            src={'/img/GoldCubanLink/gold_cuban_link_1.png'} alt="alt"
             height="80"
             width="80"
           />

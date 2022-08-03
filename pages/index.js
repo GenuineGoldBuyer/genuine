@@ -105,13 +105,13 @@ export default function Home({ cities }) {
       <Nav />
       <Intro />
       <h1 className="text-6xl text-center lg:text-6xl xs:text-xl 2xs:text-xl s:text-xl sm:text-lg text-yellow-500 mx-auto font-extrabold font-sans py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
-        <Image src={Chennai} height={70} width={70} />
+        <Image src={Chennai} alt="alt" height={70} width={70} />
         Sell your Gold at best Market rate in Chennai
       </h1>
       <Countup/>
 
       <h1 className="text-6xl text-center lg:text-6xl xs:text-xl 2xs:text-xl s:text-xl sm:text-lg text-yellow-500 mx-auto font-extrabold font-sans py-10 md:py-7 sm:py-10 xs:py-7 2xs:py-7 s:py-7">
-        <Image src={Chennai} height={70} width={70} />
+        <Image src={Chennai} alt="alt" height={70} width={70} />
         Sell your Gold at your Location in Chennai
       </h1>
 
@@ -125,7 +125,7 @@ export default function Home({ cities }) {
               <a>
                 <main className="border h-full  hover:border-amber-600 py-3 bg-yellow-100">
                   <p className="text-center text-amber-500 hover:text-amber-300 hover:underline text-lg lg:text-lg xs:text-xs 2xs:text-xs s:text-xs sm:text-base font-heading font-mono font-medium   ">
-                    <Image src={Chennai} height={30} width={30} />{' '}
+                    <Image src={Chennai} alt="alt" height={30} width={30} />{' '}
                     {post.city.toUpperCase()}{' '}
                   </p>
                 </main>

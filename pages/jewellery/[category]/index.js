@@ -2,7 +2,10 @@ import Nav from '../../nav';
 import Link from 'next/link';
 import Footer from '../../footer';
 import Head from 'next/head';
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import Image from "next/image";
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
 
 export default function Car({ car, category }) {
   return (
@@ -84,9 +87,13 @@ export default function Car({ car, category }) {
             <article>
               Get Ideas from Gallery {'>>'} Personalize your own {category}{' '}
               {'>>'} Talk to our expert
-              <div className="grid grid-cols-4 xs:ml-4 md:mx-4 sm:ml-0 xs:grid xs:grid-cols-2 sm:grid sm:grid-cols-4 md:grid md:grid-cols-3 2xs:grid 2xs:grid-cols-3 gap-1 2xs:mx-4 md:ml-11 mr-3 my-10 ">
+              <div className="grid grid-cols-4 xs:ml-4 md:mx-4 sm:ml-0 xs:grid xs:grid-cols-2 sm:grid sm:grid-cols-4 md:grid md:grid-cols-3 2xs:grid 2xs:grid-cols-3 gap-1 2xs:mx-4 md:ml-11 mr-3 my-10 place-items-center">
                 {car.map(post => (
                   <div key={post.id}>
+                    <Zoom zoomMargin={40}>
+                    <Image src={"/img/"+post.category+"/"+post.im} alt="alt" width={180} height={180}/>
+                    </Zoom>
+
                     <Link
                       href="/jewellery/[category]/[items]"
                       as={'/jewellery/' + post.category + '/' + post.items}

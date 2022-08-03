@@ -9,7 +9,7 @@ export default function Footer() {
           <h1 className="text-3xl xs:text-sm text-white uppercase text-center font-bold 2xs:text-base md:text-xl lg:text-2xl s:text-sm">
             COULD&apos;NT FIND YOUR DESIRED AUTO PARTS?{' '}
             <Link href="/contact">
-              <a className="underline text-blue-900">CONTACT US NOW {'>>'}</a>
+              <Link className="underline text-blue-900">CONTACT US NOW {'>>'}</Link>
             </Link>
           </h1>
         </div>
@@ -37,26 +37,26 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-300">
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Discord Server
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Twitter
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Facebook
-                  </a>
+                  </Link>
                 </li>
-                <a href="/" className="hover:underline"></a>
+                <Link href="/" className="hover:underline"></Link>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline"></a>
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline"></Link>
+                  <Link href="/" className="hover:underline">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -66,19 +66,19 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-300">
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Licensing
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Terms &amp; Conditions
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -103,24 +103,24 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-300">
                 <li className="mb-4">
-                  <a href="/" className=" hover:underline">
+                  <Link href="/" className=" hover:underline">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Careers
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Brand Center
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Blog
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -132,24 +132,24 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-300">
                 <li className="mb-4">
-                  <a href="/" className=" hover:underline">
+                  <Link href="/" className=" hover:underline">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Careers
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Brand Center
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Blog
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -159,26 +159,26 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-300">
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Discord Server
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Twitter
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Facebook
-                  </a>
+                  </Link>
                 </li>
-                <a href="/" className="hover:underline"></a>
+                <Link href="/" className="hover:underline"></Link>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline"></a>
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline"></Link>
+                  <Link href="/" className="hover:underline">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -188,19 +188,19 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-300">
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Privacy Policy
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Licensing
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Terms &amp; Conditions
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -210,24 +210,24 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-300">
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     iOS
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Android
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Windows
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     MacOS
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -237,24 +237,24 @@ export default function Footer() {
               </h2>
               <ul className="text-gray-300">
                 <li className="mb-4">
-                  <a href="/" className=" hover:underline">
+                  <Link href="/" className=" hover:underline">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Careers
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Brand Center
-                  </a>
+                  </Link>
                 </li>
                 <li className="mb-4">
-                  <a href="/" className="hover:underline">
+                  <Link href="/" className="hover:underline">
                     Blog
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -262,11 +262,11 @@ export default function Footer() {
 
           <div className="py-6 px-4 bg-gray-900 md:flex md:items-center md:justify-between">
             <span className="text-sm text-gray-300 sm:text-center">
-              © 2022 <a href="https://flowbite.com/">Genuine Gold Buyer</a>. All
+              © 2022 <Link href="https://flowbite.com/">Genuine Gold Buyer</Link>. All
               Rights Reserved.
             </span>
             <div className="flex mt-4 space-x-6 sm:justify-center md:mt-0">
-              <a href="/" className="text-gray-400 hover:text-white">
+              <Link href="/" className="text-gray-400 hover:text-white">
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"
@@ -279,8 +279,8 @@ export default function Footer() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-              </a>
-              <a href="/" className="text-gray-400 hover:text-white">
+              </Link>
+              <Link href="/" className="text-gray-400 hover:text-white">
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"
@@ -293,8 +293,8 @@ export default function Footer() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-              </a>
-              <a href="/" className="text-gray-400 hover:text-white">
+              </Link>
+              <Link href="/" className="text-gray-400 hover:text-white">
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"
@@ -303,8 +303,8 @@ export default function Footer() {
                 >
                   <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
                 </svg>
-              </a>
-              <a href="/" className="text-gray-400 hover:text-white">
+              </Link>
+              <Link href="/" className="text-gray-400 hover:text-white">
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"
@@ -317,8 +317,8 @@ export default function Footer() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-              </a>
-              <a href="/" className="text-gray-400 hover:text-white">
+              </Link>
+              <Link href="/" className="text-gray-400 hover:text-white">
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"
@@ -331,7 +331,7 @@ export default function Footer() {
                     clipRule="evenodd"
                   ></path>
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </footer>
